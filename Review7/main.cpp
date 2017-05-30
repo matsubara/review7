@@ -6,6 +6,13 @@
 //  Copyright © 2017 Mauricio Matsubara. All rights reserved.
 //
 
+/*
+ 
+ 1. Create a function that calculates the factorial of the number 5
+ 
+ 2. Create a function that calculates the factorial of any number
+*/
+
 #include <iostream>
 
 int main(int argc, const char * argv[]) {
