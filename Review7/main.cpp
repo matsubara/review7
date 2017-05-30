@@ -14,9 +14,21 @@
 */
 
 #include <iostream>
+int factorial5 (void){
+    return 5*4*3*2*1;
+    
+}
+
+int factorial (int b){
+    if (b==1){
+        return 0;
+    }
+    return 0;
+}
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    int a;
+    a = factorial5();
+    std::cout << a << "\n";
     return 0;
 }
