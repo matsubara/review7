@@ -11,7 +11,9 @@
  1. Create a function that calculates the factorial of the number 5
  
  2. Create a function that calculates the factorial of any number
-*/
+
+ https://www.youtube.com/watch?v=_OmRGjbyzno&list=PL2_aWCzGMAwLz3g66WrxFGSXvSsvyfzCO
+ */
 
 #include <iostream>
 
