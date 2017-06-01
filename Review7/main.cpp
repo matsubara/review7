@@ -22,15 +22,18 @@ int factorial5 (void){
 }
 
 int factorial (int b){
-    if (b==1){
-        return 0;
+    if (b==0){
+        return 1;
     }
-    return 0;
+    else{
+       return b * factorial(b-1);
+    }
 }
 
 int main(int argc, const char * argv[]) {
-    int a;
-    a = factorial5();
-    std::cout << a << "\n";
-    return 0;
+    int b;
+    std::cout<<"Give me a value for b:";
+    std::cin >> b;
+    int result= factorial(b);
+    std::cout<< result;
 }
