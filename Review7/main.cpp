@@ -16,24 +16,42 @@
  */
 
 #include <iostream>
-int factorial5 (void){
-    return 5*4*3*2*1;
-    
-}
 
-int factorial (int b){
+/*
+ 
+ Function: factorial
+ Parameters: int, bool (optional)
+ Return: int
+ Description: returns the factorial of a number (passed as parameter). If a second parameter is passed as true, additional debug info goes to the output
+ 
+ */
+
+// global variable! Caution! Use wisely!
+//bool bDebug;
+
+int factorial (int b, bool debug = false) {
     if (b==0){
         return 1;
     }
-    else{
-       return b * factorial(b-1);
+    else {
+        int c;
+        if (debug) {
+            std::cout << "Entrou em factorial b=" << b << "\n";
+        }
+        c = b * factorial(b-1, debug);
+        if (debug){
+            std::cout << "Retornando c=" << c << "\n";
+        }
+        return c;
     }
 }
 
 int main(int argc, const char * argv[]) {
     int b;
+    //bDebug = false; //let's try to avoid using global variables
+    
     std::cout<<"Give me a value for b:";
     std::cin >> b;
-    int result= factorial(b);
-    std::cout<< result;
+    std::cout<< factorial(b) << "\n";
+    std::cout<< factorial(6, true); //I want debug info only on this one!
 }
